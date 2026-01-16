@@ -1,0 +1,16 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ApKt01", "ApKt01\ApKt01.csproj", "{4E0EE4B8-6391-4E41-A1BC-57666120379A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4E0EE4B8-6391-4E41-A1BC-57666120379A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4E0EE4B8-6391-4E41-A1BC-57666120379A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4E0EE4B8-6391-4E41-A1BC-57666120379A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4E0EE4B8-6391-4E41-A1BC-57666120379A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
