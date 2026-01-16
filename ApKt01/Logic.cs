@@ -1,3 +1,5 @@
+using System.Collections.Concurrent;
+
 namespace ApKt01;
 
 public static class Logic
@@ -11,6 +13,8 @@ public static class Logic
 		RunArrayProcessor();
 
 		Console.Write(Environment.NewLine);
+
+		RunDataProcess();
 	}
 
 	private static async Task RunDownloadManager()
@@ -40,8 +44,18 @@ public static class Logic
 		Console.WriteLine($"5th el (after): {bigArray[6]}");
 	}
 
-	private static void DataProcessor()
+	private static void RunDataProcess()
 	{
 		Console.WriteLine($"Data Processor...{Environment.NewLine}");
+
+		var bigArray = Enumerable.Range(0, 1024 * 1024 * 10).ToArray();
+		for (var i = 0; i < bigArray.Length; i++)
+		{
+			bigArray[i] = i;
+		}
+
+		var bag = new ConcurrentBag<int>(bigArray);
+
+		DataProcessor.ProcessData(bag);
 	}
 }
